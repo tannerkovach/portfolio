@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'made-dillan';
+  src: url('~@/assets/made-dillan.otf');
+  font-display: swap;
+}
+
+body {
+  background-color: #fefdfd;
+  font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: 0;
+}
+
+:focus-visible,
+:focus {
+  outline: 5px auto blue;
+}
+
+tr:nth-child(odd) {
+  background-color: #f0f9ff;
+}
+
+#header ul li:not(:last-child):after {
+  content: '/';
+  padding: 0 16px 0 16px;
+  @apply text-gray-800;
+}
+
+.link-group ul li:not(:last-child):after {
+  content: '/';
+  padding: 0 16px 0 16px;
+  @apply text-gray-800;
+}
+
+@screen sm {
+  #contact ul li:not(:last-child):after {
+    content: '/';
+    padding: 0 16px 0 16px;
+    @apply text-gray-800;
+  }
+}
+
+.btn {
+  height: min-content;
+}
+
+summary.font-serif {
+  line-height: inherit;
+}
+
+summary::-webkit-details-marker {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.transparent {
+  z-index: 1;
+  height: 600px;
+  width: calc(100% + 16px);
+  pointer-events: none;
+  background-image: url(https://assets.codepen.io/672649/01.svg);
+  background-position: 110px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h3 {
+  width: fit-content;
+}
+
+#work .container,
+#about .container {
+  @screen md {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto;
+  }
+
+  h3 {
+    align-self: start;
+  }
+}
+
+#about .container {
+  @screen md {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto;
+
+    .img-wrapper {
+      grid-column: 2;
+      grid-row: 2;
+    }
+  }
+
+  @screen lg {
+    display: grid;
+    grid-template-columns: 200px 0.5fr 1fr;
+    grid-template-rows: auto;
+
+    .img-wrapper {
+      grid-column: 2/3;
+      grid-row: 1;
+    }
+  }
+}
+
+.container:not(#contact) {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@screen sm {
+  .container:not(#contact) {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@screen md {
+  .container:not(#contact) {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@screen lg {
+  .container:not(#contact) {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+svg {
+  width: 24px;
+}
+
+#contact h3 {
+  width: fit-content;
+}
+
+#header::before {
+  margin-top: -50px;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  text-align: center;
+  padding: 2px 6px;
+  position: absolute;
+  z-index: 100;
+}
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+summary {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  font-family: made-dillan, Helvetica, Arial, sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
