@@ -76,5 +76,14 @@ export default {
   server: {     
     port: 8000, // default: 3000     
     host: '0.0.0.0', // default: localhost   
-  }
+  },
+
+  render: {
+    bundleRenderer: {
+      shouldPreload: (_file, type) => {
+        console.log(_file, type)
+        return ['script', 'style', 'font'].includes(type)
+      }
+    }
+  },
 }
