@@ -18,6 +18,7 @@ export default {
     },
     link: [
 	    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: "preload", as: "font", href: "made-dillan.otf", crossorigin: "anonymous"}
 	  ],
 	  script: [
       {
