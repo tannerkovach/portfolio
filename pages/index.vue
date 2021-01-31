@@ -69,13 +69,13 @@
                                     as Firebase Authentication. App offers
                                     email/password authentication and basic
                                     read/write abilities to save read and unread
-                                    books in a users library.
+                                    books in a users library. <span class="italic">Email verification is not required to demo the app.</span>
                                 </p>
                                 <div class="link-group">
                                     <ul class="flex">
                                         <li>
                                             <a
-                                                href="#"
+                                                href="https://github.com/tannerkovach/Librarian-App"
                                                 class="text-purple-700 hover:underline"
                                                 target="_blank"
 												rel="noreferrer"
@@ -84,7 +84,7 @@
                                         </li>
                                         <li>
                                             <a
-                                                href="#"
+                                                href="https://librarian-app.netlify.app/"
                                                 class="text-purple-700 hover:underline"
                                                 target="_blank"
 												rel="noreferrer"
